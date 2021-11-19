@@ -30,7 +30,8 @@ Resources:
       Timeout: 100
       Description: A Lambda function that returns a static string.
       Events:
-        Type: HttpApi
+        ApiEvent:
+          Type: HttpApi
       Policies:
         # Give Lambda basic execution Permission to the helloFromLambda
         - AWSLambdaBasicExecutionRole
